@@ -189,3 +189,16 @@
   transform: translateX(-50%);
   margin-top: -20px;
 }
+
+.banner-r {
+  position: fixed;
+  right: 2%;
+  top: 48%;
+  z-index: 10;
+  transform: translateY(-50%);
+  text-align: right;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
