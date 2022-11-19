@@ -51,7 +51,7 @@
 }
 
 .logo {
-  width: 35.4%;
+  width: 50%;
   margin: 3% auto 0;
   position: relative;
   z-index: 2;
@@ -106,6 +106,7 @@
   border: none;
   padding: 10px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .btn-register {
@@ -115,12 +116,13 @@
   border: none;
   padding: 10px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .tab-pane {
   display: grid;
   margin: 10px;
-  justify-content: center;
+
 }
 
 .form-control {
@@ -155,7 +157,7 @@
 .ant-input-affix-wrapper {
   position: relative;
   display: inline-block;
-  width: 100%;
+  width: 80%;
   min-width: 0;
   color: #000929;
   font-size: 15px;
@@ -166,11 +168,11 @@
   transition: all 0.3s;
   display: inline-flex;
   height: 50px;
+  margin: 5px auto;
 }
 
 .input-default {
-  width: 70%;
-  margin-left:  15px;
+  width: 80%;
 }
 
 .btn_form {

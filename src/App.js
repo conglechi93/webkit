@@ -2,6 +2,11 @@ import './App.css';
 import backgroundImg from './images/background.png'
 import logoImg from './images/logo.png';
 import {Button, Input } from 'antd';
+import Login2 from './images/login-2.png';
+import FB from './images/button-facebook.png';
+//import Login from './images/login-1.png'
+import Register1 from './images/register-1.png'
+
 
 function App() {
 
@@ -28,15 +33,32 @@ function App() {
                       <Button className='btn-register'></Button>
                       <div className='tab-pane'>
                         <span className='ant-input-affix-wrapper'>
-                          <Input className='input-default' placeholder='Tên dăng nhập'></Input>
+                          <Input placeholder='Tên đăng nhập' className='input-default'></Input>
                         </span>
-                        
-                        <Input.Password maxLength={30} placeholder='Mật khẩu' type='password' className='ant-input-affix-wrapper'/>
+                        <Input.Password maxLength={30} placeholder='Mật khẩu' type='password' className='ant-input-affix-wrapper '/>
                       </div>
                     </div>
                     <div className='form-group btn_form'>
-                      <Button className='btn-login'></Button>
+                      <Button className='btn-login' style={{ backgroundImage: `url(${Login2})`}}></Button>
+                      <Button className='btn-register' style={{ backgroundImage: `url(${FB})`}}></Button>
+                    </div>
+                  </div>
+                </div>
+                <div className='form_style'>
+                  <div className='tab-content'>
+                    <div className='form-group'>
                       <Button className='btn-register'></Button>
+                      <Button className='btn-login' style={{ backgroundImage: `url(${Register1})`}}></Button>
+                      <div className='tab-pane'>
+                        <span className='ant-input-affix-wrapper'>
+                          <Input placeholder='Tên đăng nhập' className='input-default'></Input>
+                        </span>
+                        <Input.Password maxLength={30} placeholder='Mật khẩu' type='password' className='ant-input-affix-wrapper '/>
+                      </div>
+                    </div>
+                    <div className='form-group btn_form'>
+                      <Button className='btn-login' style={{ backgroundImage: `url(${Login2})`}}></Button>
+                      <Button className='btn-register' style={{ backgroundImage: `url(${FB})`}}></Button>
                     </div>
                   </div>
                 </div>
