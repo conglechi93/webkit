@@ -37,9 +37,6 @@
   background-repeat: no-repeat; 
 }
 
-
-
-
 /* Header Css */
 .container {
   max-width: 650px;
@@ -48,6 +45,8 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  
 }
 
 .logo {
@@ -201,4 +200,45 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-height: 350px;
+  max-width: 320px;
+ 
+}
+
+@media screen  and (max-width: 1200px) {
+  .banner-r {
+    display: none 
+  }
+}
+
+
+
+
+#game {
+  max-width: 400px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  position: fixed;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 27%;
+}
+
+@media screen and (max-width: 1400px) {
+  #game {
+      max-width: 25%;
+  }
+}
+
+.img-game {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+@media screen and (max-width: 1200px) {
+  #game {
+    display: none 
+  }
 }

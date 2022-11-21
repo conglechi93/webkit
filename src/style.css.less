@@ -1,0 +1,130 @@
+.banner-r {
+    @media screen and (max-width: 1600px) {
+        max-width: 23%;
+    }
+    width: 300px;
+    height: 300px;
+}
+
+
+
+#game {
+    width: 700px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    position: fixed;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 27%;
+}
+
+
+.auth-slider {
+    display: flex;
+    img {
+      padding-top: 1rem;
+    }
+  
+    @media (max-width: @screen-md) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    @media (max-width: @screen-sm) {
+      display: none;
+    }
+  
+    color: @white;
+    font-size: @font-size-base;
+    width: 100%;
+    flex: 1;
+    min-width: 0;
+  
+    .ant-carousel {
+      width: 100%;
+      height: 75%;
+  
+      .slick-slider {
+        height: 100%;
+      }
+      .slick-list {
+        height: 100%;
+        .slick-track {
+          display: flex !important;
+          height: 100%;
+        }
+        .slick-track div div{
+          height: 100%;
+        }
+      }
+    }
+  
+    &-item {
+      display: inline-flex !important;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 45vw;
+      max-height: 450px;
+  
+      > svg {
+        max-width: min(100%, 46vw);
+        max-height: 480px;
+        margin-bottom: 2rem;
+  
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+  
+      .title {
+        margin-top: auto;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+  
+      .subtitle {
+        font-weight: @font-weight-light;
+        color: @text-color-secondary;
+        max-width: 20rem;
+        text-align: center;
+      }
+    }
+    .slick-slider .div {
+      height: 100%;
+    }
+  
+    .auth-slider-item {
+      font-size: 13px;
+      max-height: 100%;
+    }
+  
+    .auth-slider-item h5{
+      font-size: 18px;
+      color: #B61414;
+    }
+  
+    .floating-item-1 {
+      width: 8vw;
+      height: 8vw;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: fade(@main-color, 60%);
+      border-radius: 50%;
+      transform: translate(20%, -50%);
+    }
+  
+    .floating-item-2 {
+      width: 3vw;
+      height: 3vw;
+      position: absolute;
+      right: 15vw;
+      top: calc(var(--vh, 1vh) * 5);
+      background-color: fade(@main-color, 60%);
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }

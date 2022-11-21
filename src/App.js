@@ -9,7 +9,11 @@ import Login1 from './images/login-1.png'
 import Register1 from './images/register-1.png';
 import Gift from './images/gift.png';
 import { useState } from 'react';
-import AppCarousel from './core/AppCarousel'
+import { Carousel } from 'antd';
+import LiveCasino from './images/live-casino.png'
+// import AppCarousel from './core/AppCarousel'
+// import {Typography} from 'antd';
+import './style.css.less';
 
 
 
@@ -33,10 +37,19 @@ function App() {
     setStyle1({display: "none"});
   }
 
+  const contentStyle = {
+    margin: 0,
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
+  };
   
 
   return (
     <div >
+      
       <div className="main" style={{ backgroundImage: `url(${backgroundImg})`}}>
         <div>
           <header>
@@ -93,21 +106,45 @@ function App() {
           </section>
         </div>
         <div className='banner-r'>
-          <AppCarousel autoplay swipeToSlide draggable>
-              {/* <div className='auth-slider-item'>
-                  <h1>abv</h1>
-                  <h1>ag</h1>
+          <img src={LiveCasino}>
+          </img>
+
+
+        {/* <div className='auth-slider'>
+            <AppCarousel autoplay swipeToSlide draggable>
+              <div className='auth-slider-item'>
+                <Typography.Title level={5} className='title'>
+                  abc
+                </Typography.Title>
+                <Typography.Text className='subtitle'>
+                  abc
+                </Typography.Text>
               </div>
               <div className='auth-slider-item'>
-                  <h1>abv</h1>
-                  <h1>ag</h1>
-              </div> */}
-              {/* <div className='auth-slider-item'>
-                  <h1>abv</h1>
-              </div> */}
-
-          </AppCarousel>
+                <Typography.Title level={5} className='title'>
+                  abc
+                </Typography.Title>
+                <Typography.Text className='subtitle'>
+                  abc 
+                </Typography.Text>
+              </div>
+              <div className='auth-slider-item'>
+                <Typography.Title level={5} className='title'>
+                  abc
+                </Typography.Title>
+                <Typography.Text className='subtitle'>
+                  abc
+                </Typography.Text>
+              </div>
+            </AppCarousel>
+          </div> */}
         </div>
+        <section id="game">
+          <div className='container'>
+            <img src={LiveCasino} className='img-game'>
+            </img>
+          </div>
+        </section>
       </div>
     </div>
   );
